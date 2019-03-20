@@ -20,9 +20,9 @@ class UserAdapter(var users: List<User>) : RecyclerView.Adapter<UserAdapter.View
         }
 
     override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
-       p0.name.text = users[p1].firstName
-        p0.secondName.text = users[p1].firstName
-        p0.email.text = users[p1].firstName
+       p0.name.text = "1"
+        p0.secondName.text = "!"
+        p0.email.text = "1"
     }
 
     class ViewHolder (itemView : View):RecyclerView.ViewHolder(itemView){

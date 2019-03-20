@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
+import android.widget.LinearLayout
 import com.example.vasialeleka.roomkotlin.R
 
 import com.example.vasialeleka.roomkotlin.User
@@ -22,7 +23,7 @@ lateinit var listView :RecyclerView
         }
          Log.d("rer",""+users.size)
         listView=findViewById(R.id.list)
-       listView.layoutManager = LinearLayoutManager(this)
+       listView.layoutManager = LinearLayoutManager(this,LinearLayout.VERTICAL,false)
         listView.adapter = UserAdapter(users)
     }
 }
